@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Contábil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,600;0,700;0,900;1,200;1,400;1,500;1,600;1,900&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" type="text/css" href="./styles.css" />
+</head>
+
+<body>
+  <div class="caixa-superior">
+    <div class="cabeçalho">
+      <h2 class="titulo-cabeçalho">Dev Contábil</h2>
+      <a href="#titulo-inferior" class="link-cabeçalho"> Quem somos</a>
+      <a href="#titulo-meio" class="link-cabeçalho">Serviços</a>
+
+      <a class="link-cabeçalho" onclick="chamaOformulario()">Contatos</a>
+    </div>
+
+    <h1>Dev Contábil</h1>
+    <form id="formulario-contato" action="https://formsubmit.co/tay.jung29@gmail.com" method="post">
+      <h3 class="titulo-formulario">Entre em contato</h3>
+      <label>
+        Nome
+        <input type="text" name="Nome" placeholder="Digite seu nome" required />
+      </label>
+      <label">
+        E-mail
+        <input type="email" name="Email" placeholder="Digite seu e-mail" required />
+        </label>
+        Whatsapp
+        <input type="tel" name="Telefone" placeholder="Digite seu telefone" required />
+        </label>
+        <label>
+          Fale conosco
+          <textarea name="info" placeholder="Qual é a sua dúvida?" required></textarea>
+        </label>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+  </div>
+
+  <h2 id="titulo-meio">Nossos Serviços</h2>
+
+  <div class="caixa-central">
+
+
+    <div class="card">
+      <h3 class="titulo-card">Contabilidade completa</h3>
+      <ul>
+        <li>Primeiro item da lista</li>
+        <li>Segundo item da lista</li>
+        <li>Terceiro item da lista</li>
+        <li>Quarto item da lista</li>
+        <li>Quinto item da lista</li>
+        <li>Sexto item da lista</li>
+
+
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="titulo-card">Cuidamos do seu negócio</h3>
+      <ul>
+        <li>Primeiro item da lista</li>
+        <li>Segundo item da lista</li>
+        <li>Terceiro item da lista</li>
+        <li>Quarto item da lista</li>
+        <li>Quinto item da lista</li>
+        <li>Sexto item da lista</li>
+
+
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="titulo-card">Cuidamos de você</h3>
+      <ul>
+        <li>Primeiro item da lista</li>
+        <li>Segundo item da lista</li>
+        <li>Terceiro item da lista</li>
+        <li>Quarto item da lista</li>
+        <li>Quinto item da lista</li>
+        <li>Sexto item da lista</li>
+
+
+      </ul>
+    </div>
+  </div>
+  <div class="caixa-inferior">
+    <h2 id="titulo-inferior">Sobre nós</h2>
+    <p class="paragrafo-inferior">
+      Estamos presentes no mercado há mais de 4 décadas auxiliando nossos clientes nacionais e internacionais quejá
+      atuam
+      ou desejamabrir seus negócios e ingressar no Brasil.
+      Assessoramos investidores ("brasileiros") interessados emfazer negócios emoutros países.
+      Oferecemos "backoffice" nas areas Fineanceira, Recursos Humanos, Tributária e Contabilidade, inclusive a abertura,
+      legalização e regularizaão de empresas e negócios.
+      Com pesquisas de mercado,montamos toda estrutura organizacional, ambiente operacional elógistica de sas
+      atividades,
+      com proficionais qualificados, competentes e continuamente treinados.
+      Somos especialistas emempresas tributadas pelo LUCRO REAL e Contabilidade em IFRS. Assim, o Planejamento das
+      Operaçõese suas consequências tributarias passamaser condições de competitividade, inclusivesugerindo incorporação
+      ou desmembramento de atividades.</p>
+  </div>
+
+</body>
+<script>
+  let formulario = document.getElementById("formulario-contato")
+  console.log(formulario)
+  
+  function chamaOformulario(){
+    formulario.className = "mostrar-formulario"
+  }
+
+</script>
+
+</html>
